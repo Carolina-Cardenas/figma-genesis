@@ -4,37 +4,40 @@ main {
   margin-left: 125px;
   margin-right: 125px;
 }
-.main__text {
+.text {
   width: 30%;
 }
-.main__box,
-.main__text {
+.weight-bold{
+    font-weight: bold;
+}
+.box,
+.text {
   display: flex;
   justify-content: space-between;
 }
-.main__info,
-.main__text {
-  font-weight: bold;
+.info,
+.text2 {
+ 
   margin-bottom: 90px;
   line-height: 30px;
   margin-top: 25px;
 }
 
-.main__info2 {
+.info2 {
   color: #111111;
   font-weight: italic;
   font-size: 10px;
   margin-top: 100px;
 }
 
-.main__title {
+.title {
   width: 32%;
 }
 .image {
   max-width: 100%;
   height: auto;
 }
-.main__box2 {
+.box2 {
   justify-content: space-between;
   display: flex;
 }
@@ -44,14 +47,20 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto ;
   margin-top:25px;
+  
 }
 
-
-.grid__elemen_maint {
+.grid__element{
  
     overflow: hidden;
     position: relative;
-
+    margin: 0
+}
+.grid__element_main {
+ 
+    overflow: hidden;
+    position: relative;
+    margin: 0
 }
 .grid__element_main p {
     
@@ -74,32 +83,42 @@ main {
     margin: 10px;
     grid-gap: 60px;
    justify-content: space-between;
+   border-collapse: collapse;
+   border-top: 1px solid black; 
+   border-bottom: 1px solid black;
   }
   
 .awards__first{
     grid-row: 1 / 3;
     grid-column: 1 / 2;
+    
 }
 .awards__second{
     grid-row: 1 / 3;
     grid-column: 2 / 3;
+  
 }
 .awards__third{
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+ 
+ 
 }
 .awards__fourth{
     grid-row: 1 / 2;
     grid-column: 4 / 5;
+    
 }
 .awards__fifth{
     grid-row: 1 / 2;
     grid-column: 5/ 6;
     justify-self: end;
+     
 }
 .awards__sixth{
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    
 }
 .awards__seventh{
     grid-row: 2 / 3;
@@ -113,6 +132,7 @@ main {
 .awards__ninth{
     grid-row: 3 / 5;
     grid-column: 1 / 2;
+   
 }
 .awards__tenth{
     grid-row: 3 / 5;
@@ -121,11 +141,12 @@ main {
 .awards__eleventh{
     grid-row: 3 / 4;
     grid-column: 3 / 4;
+    
 }
 .awards__twelveth{
     grid-row: 3/ 4;
     grid-column: 4/ 5;
-   ;
+   
 }
 .awards__thirteenth{
     grid-row: 3 / 4;
@@ -134,7 +155,8 @@ main {
 }
 .awards__fourteenth{
     grid-row: 4 / 5;
-    grid-column: 3 / 4;   
+    grid-column: 3 / 4;
+    font-weight: bold;   
 }
 .awards__fifteenth{
     grid-row: 4 / 5;
@@ -144,4 +166,11 @@ main {
     grid-row: 4 / 5;
     grid-column: 5 / 6; 
     justify-self: end;   
+}
+.grid__element:nth-child(1),
+.grid__element:nth-child(2),
+.grid__element:nth-child(6),
+.grid__element:nth-child(7),
+.grid__element:nth-child(8) {
+  border-bottom: 1px solid black;
 }
